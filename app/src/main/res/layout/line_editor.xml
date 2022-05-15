@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/sp_rd"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/sp_lines"
+        android:layout_width="339dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/save_Button"
+        app:layout_constraintTop_toBottomOf="@+id/save_Button" />
+
+    <Spinner
+        android:id="@+id/sp_ld"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sp_rd" />
+
+    <Spinner
+        android:id="@+id/sp_c"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_rd" />
+
+    <Spinner
+        android:id="@+id/sp_rw"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_c" />
+
+    <Spinner
+        android:id="@+id/sp_lw"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sp_rw" />
+
+    <TextView
+        android:id="@+id/rd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Right Defenseman"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/sp_rd"
+        app:layout_constraintEnd_toEndOf="@+id/sp_rd"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/sp_rd" />
+
+    <TextView
+        android:id="@+id/ld_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Defenseman"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/sp_ld"
+        app:layout_constraintStart_toStartOf="@+id/sp_ld"
+        app:layout_constraintTop_toTopOf="@+id/rd_text" />
+
+    <TextView
+        android:id="@+id/c_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/sp_c"
+        app:layout_constraintEnd_toEndOf="@+id/sp_c"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/sp_c" />
+
+    <TextView
+        android:id="@+id/rw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Right Wing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/sp_rw"
+        app:layout_constraintEnd_toEndOf="@+id/sp_rw"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/sp_rw" />
+
+    <TextView
+        android:id="@+id/lw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Wing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@+id/sp_lw"
+        app:layout_constraintStart_toStartOf="@+id/sp_lw"
+        app:layout_constraintTop_toTopOf="@+id/rw_text" />
+
+    <Button
+        android:id="@+id/save_Button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_name" />
+
+    <Button
+        android:id="@+id/load_Button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="Load"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_lines" />
+
+    <EditText
+        android:id="@+id/line_name"
+        android:layout_width="356dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Line Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/save_Button"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ImageView
+        android:id="@+id/addPlayer_img"
+        android:layout_width="154dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <EditText
+        android:id="@+id/addPlayer_fName"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/addPlayer_img"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_img" />
+
+    <EditText
+        android:id="@+id/addPlayer_height"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Height (optional)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/addPlayer_number"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_hand" />
+
+    <EditText
+        android:id="@+id/addPlayer_birthday"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:editable="true"
+        android:ems="10"
+        android:hint="Birth Year"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/addPlayer_height"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_height" />
+
+    <EditText
+        android:id="@+id/addPlayer_weight"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="Weight (optionaL)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/addPlayer_height"
+        app:layout_constraintTop_toTopOf="@+id/addPlayer_height" />
+
+    <EditText
+        android:id="@+id/addPlayer_number"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Number (optional)"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/addPlayer_fName"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_fName" />
+
+    <EditText
+        android:id="@+id/addPlayer_lName"
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/addPlayer_fName"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_img" />
+
+    <Button
+        android:id="@+id/addPlayer_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
+        android:text="Save Player"
+        app:layout_constraintStart_toStartOf="@+id/addPlayer_birthday"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_fName" />
+
+    <Spinner
+        android:id="@+id/addPlayer_position"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:entries="@array/positions"
+        app:layout_constraintStart_toEndOf="@+id/addPlayer_number"
+        app:layout_constraintTop_toTopOf="@+id/addPlayer_number" />
+
+    <Spinner
+        android:id="@+id/addPlayer_hand"
+        android:layout_width="86dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="28dp"
+        android:entries="@array/hands"
+        app:layout_constraintStart_toStartOf="@+id/addPlayer_number"
+        app:layout_constraintTop_toBottomOf="@+id/addPlayer_number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Shoots:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addPlayer_hand"
+        app:layout_constraintEnd_toStartOf="@+id/addPlayer_hand"
+        app:layout_constraintTop_toTopOf="@+id/addPlayer_hand"
+        app:layout_constraintVertical_bias="0.458" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

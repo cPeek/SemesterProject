@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SemesterProject</string>
+
+
+    <string-array name="positions">
+        <item>LD</item>
+        <item>RD</item>
+        <item>C</item>
+        <item>LW</item>
+        <item>RW</item>
+        <item>G</item>
+    </string-array>
+
+    <string-array name="hands">
+        <item>R</item>
+        <item>L</item>
+    </string-array>
+</resources>
